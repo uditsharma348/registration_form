@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<style>
+     body {
+          margin: 0;
+          width: 100%;
+          height: 700px;
+          background-image: linear-gradient(rgb(190, 138, 78), rgb(168, 85, 157), rgb(100, 163, 235));
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .box {
+          width: 600px;
+          height: 500px;
+          background-color: white;
+          border-radius: 10px;
+     }
+
+     .left-div {
+          width: 50%;
+          height: 100%;
+          float: left;
+          background-image: linear-gradient(blue,pink);
+     }
+
+     .div {
+          background-image: linear-gradient(blue,pink);
+          width: 22.3%;
+          height: 500px;
+          float: right;
+          left: 50%;
+          top: 15.2%;
+          position: absolute;
+          
+          
+     }
+
+     li {
+          list-style: none;
+          padding: 5px;
+          font-size: 20px;
+          font-weight: bold;
+     }
+
+     input {
+          padding: 5px;
+
+     }
+
+     h1 {
+          margin: 0;
+          margin-left: 15%;
+          text-decoration: underline;
+     }
+     .sub:hover{
+          border: 5px solid black;
+     }
+</style>
+<body>
+     <div class="container">
+          <div class="box">
+               <div class="left-div">
+                    <form action="/registation" method="post">
+                         <h1>Registration</h1>
+                         <ul>
+                              <li>Full Name</li>
+                              <li><input type="text" name="fullName" placeholder="Enter to Name"></li>
+                         </ul>
+                         <ul>
+                              <li>Email</li>
+                              <li><input type="email" name="email" placeholder="Enetr the Email"></li>
+                         </ul>
+                         <ul>
+                              <li>Password</li>
+                              <li><input type="password" name="password" placeholder="Enetr the Password"></li>
+                         </ul>
+                         <ul>
+                              <li>Gender</li>
+                              <li style="color: blue;">Male<input type="radio" name="radio" value="male"></li>
+                              <li style="color: blue;">Female<input type="radio" name="radio" value="female"></li>
+                         </ul>
+                         <div class="div">
+                              <ul style="margin-top: 18%;">
+                                   <li>Father Name</li>
+                                   <li><input type="text" name="name" placeholder="Enter to Father Name"></li>
+                              </ul>
+                              <ul>
+                                   <li>Phone Number</li>
+                                   <li><input type="number" name="Number" placeholder="Enetr the Phone Number">
+                                   </li>
+                              </ul>
+                              <ul>
+                                   <li>Confirm Password</li>
+                                   <li><input type="password" name="confpassword" placeholder="Enetr the confirm Password"></li>
+                              </ul>
+                              <ul>
+                                   <li class="" style="box-sizing: border-box;"><input type="submit"style=" margin-top:20px;background-color: rgb(58, 212, 79); color:antiquewhite; border: none; padding: 20px; border-radius: 50px; width: 140px;"></li>
+                              </ul>
+                              <ul>
+                              </ul>
+                         </div>
+                    </form>
+               </div>
+
+
+          </div>
+
+     </div>
+</body>
+
+</html>
