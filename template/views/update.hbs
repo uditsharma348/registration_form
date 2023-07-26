@@ -55,11 +55,11 @@
 
 
      }
-
      h1 {
           margin: 0;
           margin-left: 15%;
           text-decoration: underline;
+          color: rgb(235, 43, 9);
      }
 
      .sub:hover {
@@ -99,42 +99,39 @@
           color: rgb(7, 7, 7);
           font-size: 20px;
           width: 53px;
-          border: 2px solid black;
+           border: 2px solid black;
           text-decoration: none;
           border-radius: 5px;
      }
-     .up{
-          width: 300px;
-          height: 300px;
-          position: absolute;
-          left:3%;
-          top: 30%;
-          background-image: linear-gradient(blue, pink);
+     .home{
+          margin-left: 20px;
+          width: 100px;
+          height: 40px;
+          border-radius: 50px;
+          background-color: rgb(8, 212, 76);
           display: flex;
           justify-content: center;
           align-items: center;
-          box-shadow: 5px 10px rgba(196, 10, 10, 0.562);
+     }
+     .a{
+           background-color: rgb(8, 212, 76);
+           border: none;
+           color: white;
      }
 </style>
 
 <body>
      <div class="container">
-          <div class="up">
-               <div class="update">
-               <h2 style="margin-top: -20%;">Update Data </h2>
-               <a href="/update" style="background-color:rgb(10, 209, 69); margin-left: 20%;">Update</a>
-          </div>
-          </div>
           <div class="box">
                <div class="left-div">
-                    <form action="/registation" method="post">
-                         <h1>Registration</h1>
+                    <form action="/update" method="post">
+                         <h1>Update Data</h1>
                          <ul>
                               <li>Full Name</li>
                               <li><input type="text" name="fullName" placeholder="Enter to Name"></li>
                          </ul>
                          <ul>
-                              <li>Email</li>
+                              <li>Email Not Editable</li>
                               <li><input type="email" name="email" placeholder="Enetr the Email"></li>
                          </ul>
                          <ul>
@@ -167,6 +164,9 @@
                                    </li>
                               </ul>
                               <ul>
+                                   <li class="home"><a class="a" href="/">Home</a></li>
+                              </ul>
+                              <ul>
                               </ul>
                          </div>
 
@@ -176,18 +176,5 @@
           </div>
 
      </div>
-     <form action="/find" method="get">
-          <div class="view">
-               <input type="text" name="fullName" placeholder="View The Data">
-               <input type="submit" value="Submit" style="background-color: rgb(10, 209, 69);">
-          </div>
-     </form>
-     <form action="/delete" method="get">
-          <div class="delete">
-               <input type="text" placeholder="Delete The Data" name="fullName">
-               <input type="submit" value="Submit" style="background-color: rgb(10, 209, 69);">
-          </div>
-     </form>
-</body>
 
 </html>
