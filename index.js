@@ -8,7 +8,7 @@ const async = require("hbs/lib/async");
 const { emit } = require("process");
 const templatePath = path.join(__dirname, "./template/views")
 const MongoClient = require("mongodb").MongoClient;
-const client = new MongoClient("mongodb://127.0.0.1:27017")
+const client = new MongoClient("mongodb+srv://uditsharma:udit456@cluster0.iditclo.mongodb.net/")
 app.use(express.static(templatePath))
 app.set("view engine", "hbs")
 app.set("views", templatePath)
